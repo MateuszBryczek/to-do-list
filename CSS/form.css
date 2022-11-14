@@ -1,0 +1,18 @@
+.form{
+    display: flex;
+    width: 100%;
+    gap:20px;
+};
+
+@media(max-width:767){
+    .form{
+        flex-direction: column;
+    };
+}
+
+.form__input{
+    padding:10px;
+    border: 1px solid grey; 
+    width: 100%
+};
+
