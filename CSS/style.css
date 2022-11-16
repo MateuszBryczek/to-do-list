@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
 *,
@@ -10,9 +9,6 @@ html {
 }
 
 .body{
-    background-color: rgb(225, 225, 225);
-};
-
-.list__item--done{
-    text-decoration: line-through;
+    background-color: lightgray;
+    font-family: 'Montserrat', sans-serif;
 };

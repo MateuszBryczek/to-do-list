@@ -1,19 +1,8 @@
 {
-    const tasks = [
-        {
-            content: "zjeść",
-            done: true,
-        },
-        {
-            content: "iść spać",
-            done: false,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks.push({content: newTaskContent,});
         render();
     };
 
@@ -22,45 +11,48 @@
         render();
     };
 
-    const toggleTaskDone = (taskIndex) => {
+    const toggleDoneTask = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     };
 
-    const bindEvents = () => {
+    const removeEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
-        removeButtons.forEach((removeButton, Index) => {
+        removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
-                removeTask(Index);
+                removeTask(taskIndex);
             });
         });
+    };
 
-        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        const toggleDoneEvents = () => {
+            const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
-        toggleDoneButtons.forEach((toggleDoneButtons, Index) => {
+        toggleDoneButtons.forEach((toggleDoneButtons, taskIndex) => {
             toggleDoneButtons.addEventListener("click", () => {
-                toggleTaskDone(Index);
+                toggleDoneTask(taskIndex);
             });
         });
-    }
+    };
     
     const render = () => {
-        let htmlString = "";
+        let tasksListHTMLContent = "";
 
         for (const task of tasks) {
-            htmlString +=`
+            tasksListHTMLContent +=`
                 <li 
                     class="list__item${task.done ? " list__item--done" : ""}">
-                    <button class="js-done button-done">zrobione</button>
-                    <button class="js-remove button-remove">usuń</button>
+                    
+                    <button class="js-done button-toggleDone"></button>
+                    <button class="js-remove button-remove"></button>
                     ${task.content}
                 </li>
                 `;
         }
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
-        bindEvents();
+        removeEvents();
     };
 
     const onFormSubmit = (event) => {

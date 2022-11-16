@@ -6,14 +6,13 @@
 
 .section{
     margin: 10px 0px;
+    padding: 20px;
     background-color: white;
     box-shadow: 1px 1px 5px grey;
-    padding: 20px
-    
 };
 
 .section__header{
     padding: 20px;
-    border-bottom: 1px solid rgb(225, 225, 225);
+    border-bottom: 1px solid lightgray;
     margin: 0px;
 };
