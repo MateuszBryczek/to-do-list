@@ -61,6 +61,7 @@
         document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
         removeEvents();
+        toggleDoneEvents();
     };
 
     const onFormSubmit = (event) => {
@@ -75,7 +76,6 @@
         }
 
         newTaskElement.focus();
-
     };
 
     const init = () => {
