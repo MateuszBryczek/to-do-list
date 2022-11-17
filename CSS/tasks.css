@@ -1,18 +1,33 @@
+.tasks{
+    list-style: none;
+    font-size: 125%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
 .tasks__content--done{
     text-decoration: line-through;
-};
+}
 
 .tasks__button{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
     border: none;
-    padding: 0px;
-};
+    color: white;
+    text-align: center;
+}
 
 .tasks__button--toggleDone {
-    background-color: green;  
-};
+    background-color: green;
+    float: left;
+}
 
 .tasks__button--remove{
     background-color: red;
-};
+    float: right;
+}
