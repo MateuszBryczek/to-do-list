@@ -27,7 +27,23 @@
     float: left;
 }
 
+.tasks__button--toggleDone:hover {
+    background-color: rgb(0, 140, 0);
+}
+
+.tasks__button--toggleDone:active {
+    background-color: rgb(0, 160, 0);
+}
+
 .tasks__button--remove{
     background-color: red;
     float: right;
+}
+
+.tasks__button--remove:hover{
+    background-color: rgb(255, 40, 40);
+}
+
+.tasks__button--remove:active{
+    background-color: rgb(255, 70, 70);
 }
