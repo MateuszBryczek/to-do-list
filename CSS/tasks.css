@@ -12,6 +12,10 @@
     text-decoration: line-through;
 }
 
+.tasks__item--hiden {
+    display: none;
+}
+
 .tasks__button{
     width: 25px;
     height: 25px;
