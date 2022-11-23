@@ -51,3 +51,11 @@
 .tasks__button--remove:active{
     background-color: rgb(255, 70, 70);
 }
+
+.buttons{
+    color: rgb(0, 130, 130);
+    border: none;
+    margin: 0px;
+    margin-left: 20px;
+    border-bottom: 1px solid;
+}
