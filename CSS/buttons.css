@@ -1,0 +1,36 @@
+.buttons__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid lightgrey; 
+    padding: 10px;
+}
+
+.buttons{
+    color: rgb(0, 130, 130);
+    border: none;
+    margin: 0px;
+    margin-left: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+@media(max-width:767px){
+    .buttons__container{
+        flex-direction: column;
+    }
+}
+
+.buttons:disabled{
+    color: lightgray;
+}
+
+.buttons:hover{
+    color: rgb(0, 150, 150);
+}
+
+.buttons:active{
+    color: rgb(0, 170, 170);
+}
