@@ -7,7 +7,7 @@ Website have default polish language.
 
 You can input your tasks and toggle them as done or delete them.
 
-Try it by yourself: >>https://x-rey11.github.io/to-do-list/<<
+Try it by yourself: >>https://mateuszbryczek.github.io/to-do-list/<<
 
 ![](images/to-do-list-gif.gif)
 
